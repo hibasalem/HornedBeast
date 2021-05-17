@@ -32,12 +32,12 @@ Actual time needed to complete: ***50 min***
 
 Number and name of feature: ***Feature 3: Bootstrap***
 
-Estimate of time needed to complete: ***50 min***
+Estimate of time needed to complete: ***20 min***
 
-Start time: ***5:45***
+Start time: ***6:30***
 
-Finish time: ***  ***
+Finish time: ***7:00***
 
-Actual time needed to complete: ***  ***
+Actual time needed to complete: ***30 min***
 
 - - - 
