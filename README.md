@@ -1,70 +1,43 @@
-# Getting Started with Create React App
+# HornedBeasts
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+this project is a practice project for week 1 of 301 course at asac
 
-## Available Scripts
+# Author: hiba salem
 
-In the project directory, you can run:
+- - - 
 
-### `npm start`
+Number and name of feature: ***Feature #1: Display images***
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Estimate of time needed to complete: ***45 min***
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Start time: ***3:45***
 
-### `npm test`
+Finish time: ***4:10***
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Actual time needed to complete: ***25min***
 
-### `npm run build`
+- - - 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Number and name of feature: ***Feature #2: Allow users to vote for their favorite beast***
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Estimate of time needed to complete: ***45 min***
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Start time: ***4:15***
 
-### `npm run eject`
+Finish time: ***5:05***
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Actual time needed to complete: ***50 min***
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- - - 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Number and name of feature: ***Feature 3: Bootstrap***
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Estimate of time needed to complete: ***20 min***
 
-## Learn More
+Start time: ***6:30***
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Finish time: ***7:00***
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Actual time needed to complete: ***30 min***
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- - - 
