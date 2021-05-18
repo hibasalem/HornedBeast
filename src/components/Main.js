@@ -1,6 +1,5 @@
 import React from 'react';
 import HornedBeasts from './HornedBeasts';
-import hornsData from './hornsData.json';
 
 
 class Main extends React.Component{
@@ -8,7 +7,7 @@ class Main extends React.Component{
     render(){
         return(
             <>
-            {hornsData.map(item=>{
+            {this.props.beastArr.map(item=>{
                 return(
                     <HornedBeasts
                     title={item.title}
