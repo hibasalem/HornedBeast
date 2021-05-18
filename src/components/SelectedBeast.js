@@ -1,22 +1,30 @@
-import React, { Component } from "react";
-
-class Dashboard extends Component {
-  constructor() {
-    super();
-    this.state = {
-      show: false
-    };
-    this.showModal = this.showModal.bind(this);
-    this.hideModal = this.hideModal.bind(this);
+import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+// import Button from 'react-bootstrap/Button';
+// import Modal from 'react-bootstrap/Modal'
+class SelectedBeast extends React.Component {
+  final = () => {
+    this.props.changeInfo();
   }
-
-  showModal = () => {
-    this.setState({ show: true });
-  };
-
-  hideModal = () => {
-    this.setState({ show: false });
-  };
+  render() {
+    return (
+      <>
+        {/* <Modal show={true} onHide={true} animation={false}>
+<Modal.Header closeButton>
+   <Modal.Title> {this.props.title}</Modal.Title>
+ </Modal.Header>
+ <Modal.Body>
+ <Modal.Img src={this.props.imgUrl} alt={this.props.title}  />   
+ {this.props.description}
+     </Modal.Body>
+ <Modal.Footer>
+   <Button variant="secondary" onClick={true}>
+     Close
+  </Button>
+ </Modal.Footer>
+</Modal> */}
+      </>
+    );
+  }
 }
-
-export default Dashboard
+export default SelectedBeast;
