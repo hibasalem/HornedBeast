@@ -17,16 +17,30 @@ class Main extends React.Component {
     //     })
     // }
 
+    SelectedBeastDataAppProps = (stateSelectedBeastDataTitleData, stateSelectedBeastDataUrlData, stateSelectedBeastDataDescriptionData) => {
+
+        this.props.appFunctionApptoMain(stateSelectedBeastDataTitleData, stateSelectedBeastDataUrlData, stateSelectedBeastDataDescriptionData)
+
+    }
+
+    handleShowprops = (showpassed)=> {
+        this.props.handleShowAppToMain(showpassed)        
+    }
+
     render() {
         return (
             <>
                 {this.props.beastArr.map(item => {
                     return (
                         <HornedBeasts
+
                             title={item.title}
                             image_url={item.image_url}
                             alt={item.alt}
                             description={item.description}
+                            appFunctionMainToHorned={() => this.SelectedBeastDataAppProps(item.title, item.image_url, item.description)}
+                            handleShowpropsToHorned={this.handleShowprops}
+                            
                         />
                     )
                 })}
