@@ -52,4 +52,4 @@ Start time: ***1:00***
 
 Finish time: ***--***
 
-Actual time needed to complete: ***lol***
+Actual time needed to complete: ***about 16 hours ***
