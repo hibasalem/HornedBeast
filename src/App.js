@@ -6,6 +6,7 @@ import hornsData from './components/hornsData.json';
 import SelectedBeast from './components/SelectedBeast.js';
 
 
+
 class App extends React.Component {
 
   constructor(props) {
@@ -16,7 +17,7 @@ class App extends React.Component {
 
       stateSelectedBeastDataTitle: "",
       stateSelectedBeastDataUrl: "",
-      stateSelectedBeastDatadescription: "",
+      stateSelectedBeastDataDescription: "",
 
       show: false,
 
@@ -29,7 +30,7 @@ class App extends React.Component {
     this.setState({
       stateSelectedBeastDataTitle: stateSelectedBeastDataTitleData,
       stateSelectedBeastDataUrl: stateSelectedBeastDataUrlData,
-      stateSelectedBeastDatadescription: stateSelectedBeastDataDescriptionData,
+      stateSelectedBeastDataDescription: stateSelectedBeastDataDescriptionData,
     })
   }
 

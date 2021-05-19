@@ -21,13 +21,20 @@ class HornedBeasts extends React.Component {
     }
 
 
+    lastFunctionPass = (title, image_url, description) => {
+        this.props.appFunctionMainToHorned(title, image_url,description);
+        this.props.handleShowpropsToHorned();
+
+    }
+
+
 
     render() {
         return (
-            <div>
+            <div id="carddisply" >
                 <CardColumns>
 
-                    <Card style={{ width: '18rem' }} onClick={this.props.handleShowpropsToHorned} >
+                    <Card style={{ width: '18rem' }} onClick={this.lastFunctionPass} >
                         <Card.Img variant="top" src={this.props.image_url} alt={this.props.alt} title={this.props.title} />
                         <Card.Body>
                             <Card.Title>{this.props.title}</Card.Title>
