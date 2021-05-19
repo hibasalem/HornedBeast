@@ -46,10 +46,10 @@ lab 03
 
 Number and name of feature: ***Feature #1: Display a Modal***
 
-Estimate of time needed to complete: ***4 hours ***
+Estimate of time needed to complete: ***4 hours***
 
 Start time: ***1:00***
 
 Finish time: ***--***
 
-Actual time needed to complete: ***about 16 hours ***
+Actual time needed to complete: ***about 16 hours***
