@@ -4,18 +4,18 @@ import HornedBeasts from './HornedBeasts';
 
 class Main extends React.Component {
 
-    constructor(props) {
-        super(props);
-        this.state = {
-            dif: 'hi',
-        }
-    }
+    // constructor(props) {
+    //     super(props);
+    //     this.state = {
+    //         dif: 'hi',
+    //     }
+    // }
 
-    info = () => {
-        this.setState({
-            dif: 'aaa',
-        })
-    }
+    // info = () => {
+    //     this.setState({
+    //         dif: 'aaa',
+    //     })
+    // }
 
     render() {
         return (

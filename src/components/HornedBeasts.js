@@ -23,11 +23,6 @@ class HornedBeasts extends React.Component {
     render() {
         return (
             <div>
-                {/* <h2>{this.props.title}</h2>
-                <img onClick={this.likesNumberTracker} src={this.props.image_url} alt={this.props.alt} title={this.props.title} />
-                <p>{this.props.description}</p>
-                <p>❤️:{this.state.likesNumber}</p> */}
-
                 <CardColumns>
 
                     <Card style={{ width: '18rem' }}>
