@@ -50,6 +50,6 @@ Estimate of time needed to complete: ***4 hours ***
 
 Start time: ***1:00***
 
-Finish time: ***-***
+Finish time: ***--***
 
-Actual time needed to complete: ***not yet ***
+Actual time needed to complete: ***lol***

@@ -16,7 +16,14 @@ class SelectedBeast extends React.Component {
           <Modal.Header >
             <Modal.Title>{this.props.SelectedBeastTitle}</Modal.Title>
           </Modal.Header>
-          <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
+          <Modal.Body>
+            <img src={this.props.SelectedBeastUrl}  style={{ width:"400px"}} alt={this.props.SelectedBeastTitle} /> 
+          </Modal.Body>
+          <Modal.Body>
+         <p>{this.props.SelectedBeastDescription} </p> 
+
+          </Modal.Body>
+          
           <Modal.Footer>
             <Button onClick={this.props.hideValue} variant="secondary" >
               Close
