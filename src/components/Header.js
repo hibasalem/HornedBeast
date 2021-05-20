@@ -9,7 +9,7 @@ class Header extends React.Component {
             backgroundColor: "#e1e5ea",
             padding: "10px",
             fontFamily: "Arial",
-          };
+        };
 
         return (
             <div style={mystyle}>

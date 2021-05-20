@@ -5,6 +5,7 @@ this project is a practice project for week 1 of 301 course at asac
 # Author: hiba salem
 
 - - - 
+lab 2 
 
 Number and name of feature: ***Feature #1: Display images***
 
@@ -53,3 +54,20 @@ Start time: ***1:00***
 Finish time: ***--***
 
 Actual time needed to complete: ***about 16 hours***
+
+
+- - -
+
+lab 04
+
+Number and name of feature: ***Feature 1. Filter by Numbers of Horns***
+
+Estimate of time needed to complete: ***4 hours***
+
+Start time: ***5:30 am ***
+
+Finish time: ***8:00 am ***
+
+Actual time needed to complete: ***2:30 hour***
+
+- - -

@@ -17,15 +17,19 @@ class SelectedBeast extends React.Component {
             <Modal.Title>{this.props.SelectedBeastTitle}</Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            <img src={this.props.SelectedBeastUrl}  style={{ width:"400px"}} alt={this.props.SelectedBeastTitle} /> 
+            <img src={this.props.SelectedBeastUrl}
+              style={{ width: "460px" }}
+              alt={this.props.SelectedBeastTitle} />
           </Modal.Body>
           <Modal.Body>
-         <p>{this.props.SelectedBeastDescription} </p> 
+            <p>{this.props.SelectedBeastDescription} </p>
 
           </Modal.Body>
-          
+
           <Modal.Footer>
-            <Button onClick={this.props.hideValue} variant="secondary" >
+            <Button
+              onClick={this.props.hideValue}
+              variant="secondary" >
               Close
             </Button>
 
@@ -38,7 +42,3 @@ class SelectedBeast extends React.Component {
 }
 
 export default SelectedBeast;
-
-
-// onHide={handleClose}
-// onClick={handleClose}

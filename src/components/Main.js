@@ -18,9 +18,9 @@ class Main extends React.Component {
         }
     }
 
-    SelectedBeastDataAppProps = (stateSelectedBeastDataTitleData, stateSelectedBeastDataUrlData, stateSelectedBeastDataDescriptionData) => {
+    SelectedBeastDataAppProps = (stateSelectedTitleData, stateSelectedUrlData, stateSelectedDescriptionData) => {
 
-        this.props.appFunctionApptoMain(stateSelectedBeastDataTitleData, stateSelectedBeastDataUrlData, stateSelectedBeastDataDescriptionData)
+        this.props.appFunctionApptoMain(stateSelectedTitleData, stateSelectedUrlData, stateSelectedDescriptionData)
 
     }
 
@@ -34,9 +34,11 @@ class Main extends React.Component {
 
         this.props.myFilterRest(hornsData);
 
+        // console.log(filteredBeasts);
+
         let hornsNum = event.target.value;
-        
-        let filteredBeasts =[];
+        let filteredBeasts = [];
+
         this.props.beastArr.filter((item) => {
 
             if (hornsNum == item.horns) {
@@ -44,7 +46,7 @@ class Main extends React.Component {
                 filteredBeasts.push(item)
                 // console.log(filteredBeasts);
             }
-            
+
         });
 
         this.props.myFilter(filteredBeasts);
@@ -55,7 +57,7 @@ class Main extends React.Component {
     render() {
         return (
             <>
-                <Form onSubmit={this.submitForm}>
+                <Form >
 
                     <Form.Group controlId="exampleForm.SelectCustomSizeSm">
                         <Form.Label>Custom select Small</Form.Label>
@@ -67,9 +69,6 @@ class Main extends React.Component {
                             <option value='100'>wow</option>
                         </Form.Control>
                     </Form.Group>
-
-
-
 
                 </Form>
 
@@ -96,8 +95,6 @@ class Main extends React.Component {
 
             </>
         )
-
-
     }
 }
 

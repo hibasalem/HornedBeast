@@ -22,7 +22,7 @@ class HornedBeasts extends React.Component {
 
 
     lastFunctionPass = (title, image_url, description) => {
-        this.props.appFunctionMainToHorned(title, image_url,description);
+        this.props.appFunctionMainToHorned(title, image_url, description);
         this.props.handleShowpropsToHorned();
 
     }
@@ -35,7 +35,11 @@ class HornedBeasts extends React.Component {
                 <CardColumns>
 
                     <Card style={{ width: '18rem' }} onClick={this.lastFunctionPass} >
-                        <Card.Img variant="top" src={this.props.image_url} alt={this.props.alt} title={this.props.title} />
+                        <Card.Img
+                            variant="top"
+                            src={this.props.image_url}
+                            alt={this.props.alt}
+                            title={this.props.title} />
                         <Card.Body>
                             <Card.Title>{this.props.title}</Card.Title>
                             <Card.Text>
@@ -44,7 +48,10 @@ class HornedBeasts extends React.Component {
                             <Card.Text>
                                 ❤️:{this.state.likesNumber}
                             </Card.Text>
-                            <Button onClick={this.likesNumberTracker} variant="primary">like</Button>
+                            <Button
+                                onClick={this.likesNumberTracker}
+                                variant="primary">like
+                             </Button>
                         </Card.Body>
                     </Card>
 
