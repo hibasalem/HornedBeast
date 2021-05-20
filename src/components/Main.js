@@ -32,11 +32,15 @@ class Main extends React.Component {
 
     renderOption = (event) => {
 
-        this.props.myFilterRest(hornsData);
+        if (this.props.beastArr==hornsData){
 
-        // console.log(filteredBeasts);
+            this.props.myFilterRest(hornsData);
+        }
+
+        // console.log( this.props.beastArr);
 
         let hornsNum = event.target.value;
+
         let filteredBeasts = [];
 
         this.props.beastArr.filter((item) => {
@@ -46,9 +50,7 @@ class Main extends React.Component {
                 filteredBeasts.push(item)
                 // console.log(filteredBeasts);
             }
-
         });
-
         this.props.myFilter(filteredBeasts);
 
     }
