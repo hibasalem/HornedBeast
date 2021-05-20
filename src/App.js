@@ -40,7 +40,6 @@ class App extends React.Component {
     })
   }
 
-  
 
   handleClose = () => {
     this.setState({
@@ -49,11 +48,25 @@ class App extends React.Component {
   }
 
 
+  myFilter = (filteredItems) => {
+    this.setState({
+      dataArr: filteredItems , 
+      
+    })
+  }
+
+  myFilterRest = (hornsData) => {
+    this.setState({
+      dataArr: hornsData,
+    })
+  }
+
+
   render() {
     return (
       <div>
         <Header />
-        <Main beastArr={this.state.dataArr} appFunctionApptoMain={this.SelectedBeastData} handleShowAppToMain={this.handleShow} />
+        <Main  beastArr={this.state.dataArr}  myFilter= {this.myFilter} myFilterRest={this.myFilterRest} appFunctionApptoMain={this.SelectedBeastData} handleShowAppToMain={this.handleShow} />
         <SelectedBeast SelectedBeastTitle={this.state.stateSelectedBeastDataTitle} SelectedBeastUrl={this.state.stateSelectedBeastDataUrl} SelectedBeastDescription={this.state.stateSelectedBeastDataDescriptionData} showvalue={this.state.show} hideValue={this.handleClose}/>
         <Footer />
       </div>
