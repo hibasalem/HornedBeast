@@ -3,7 +3,7 @@ import HornedBeasts from './HornedBeasts';
 import Form from 'react-bootstrap/Form';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import hornsData from './hornsData.json';
-
+import CardColumns from 'react-bootstrap/CardColumns';
 
 
 
@@ -32,7 +32,7 @@ class Main extends React.Component {
 
     renderOption = (event) => {
 
-        if (this.props.beastArr==hornsData){
+        if (this.props.beastArr == hornsData) {
 
             this.props.myFilterRest(hornsData);
         }
@@ -48,6 +48,7 @@ class Main extends React.Component {
             if (hornsNum == item.horns) {
 
                 filteredBeasts.push(item)
+
                 // console.log(filteredBeasts);
             }
         });
@@ -62,7 +63,7 @@ class Main extends React.Component {
                 <Form >
 
                     <Form.Group controlId="exampleForm.SelectCustomSizeSm">
-                        <Form.Label>Custom select Small</Form.Label>
+                        <Form.Label></Form.Label>
                         <Form.Control onChange={this.renderOption} name="select" as="select" size="sm" custom>
                             <option >All</option>
                             <option value='1'>1</option>
@@ -77,20 +78,25 @@ class Main extends React.Component {
                 {
                     this.props.beastArr.map(item => {
                         return (
-                            <>
 
-                                <HornedBeasts
+                            <CardColumns>
 
-                                    title={item.title}
-                                    image_url={item.image_url}
-                                    alt={item.alt}
-                                    description={item.description}
-                                    appFunctionMainToHorned={() => this.SelectedBeastDataAppProps(item.title, item.image_url, item.description)}
-                                    handleShowpropsToHorned={this.handleShowprops}
+                                <div>
 
-                                />
+                                    <HornedBeasts
 
-                            </>
+                                        title={item.title}
+                                        image_url={item.image_url}
+                                        alt={item.alt}
+                                        description={item.description}
+                                        appFunctionMainToHorned={() => this.SelectedBeastDataAppProps(item.title, item.image_url, item.description)}
+                                        handleShowpropsToHorned={this.handleShowprops}
+
+                                    />
+
+                                </div>
+
+                            </CardColumns>
                         )
                     })
                 }
