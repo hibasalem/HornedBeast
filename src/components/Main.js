@@ -73,10 +73,12 @@ class Main extends React.Component {
 
     render() {
         const bodyStyle = {
-
-            marginLeft: "12%",
-            marginRight: "12%",
+            marginLeft: "16%",
+            marginRight: "16%",
             marginTop: "15px",
+            boxSizing: "border-box",
+            border: "gray",
+
         };
 
         return (
