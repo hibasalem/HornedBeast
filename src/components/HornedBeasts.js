@@ -40,13 +40,15 @@ class HornedBeasts extends React.Component {
 
             <>    
                 <Card style={{cardStyle}, { width: '18rem' } }  onClick={this.lastFunctionPass} >
+                    <Card.Body>
+                      <Card.Title>{this.props.title}</Card.Title>
+                    </Card.Body>
                     <Card.Img
                         variant="top"
                         src={this.props.image_url}
                         alt={this.props.alt}
                         title={this.props.title} />
                     <Card.Body>
-                        <Card.Title>{this.props.title}</Card.Title>
                         <Card.Text>
                             {this.props.description}
                         </Card.Text>
