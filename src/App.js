@@ -46,18 +46,17 @@ class App extends React.Component {
   }
 
 
-  myFilter = (filteredItems) => {
-    this.setState({
-      dataArr: filteredItems,
+  // myFilter = (filteredItems) => {
+  //   this.setState({
+  //     dataArr: filteredItems,
+  //   })
+  // }
 
-    })
-  }
-
-  myFilterRest = (hornsData) => {
-    this.setState({
-      dataArr: hornsData,
-    })
-  }
+  // myFilterRest = (hornsData) => {
+  //   this.setState({
+  //     dataArr: hornsData,
+  //   })
+  // }
 
 
   render() {
@@ -81,7 +80,8 @@ class App extends React.Component {
           SelectedBeastUrl={this.state.stateSelectedUrl}
           SelectedBeastDescription={this.state.stateSelectedDescription}
           showvalue={this.state.show}
-          hideValue={this.handleClose} />
+          hideValue={this.handleClose}
+        />
 
         <Footer />
 

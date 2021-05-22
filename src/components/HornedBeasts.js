@@ -33,7 +33,7 @@ class HornedBeasts extends React.Component {
         return (
             <div id="carddisply" >
 
-                <Card style={{ width: '18rem' }} onClick={this.lastFunctionPass} >
+                <Card style={{ float: 'left ' } , { width: '18rem' } }  onClick={this.lastFunctionPass} >
                     <Card.Img
                         variant="top"
                         src={this.props.image_url}
@@ -50,7 +50,8 @@ class HornedBeasts extends React.Component {
                         <Button
                             onClick={this.likesNumberTracker}
                             variant="primary">like
-                             </Button>
+                    
+                       </Button>
                     </Card.Body>
                 </Card>
 
