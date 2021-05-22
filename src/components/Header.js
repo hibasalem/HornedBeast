@@ -7,9 +7,10 @@ class Header extends React.Component {
 
         const mystyle = {
             backgroundColor: "#e1e5ea",
-            padding: "10px",
+            padding: "70px",
             fontFamily: "Arial",
-          };
+            height:"200px",
+        };
 
         return (
             <div style={mystyle}>

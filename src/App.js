@@ -4,6 +4,8 @@ import Main from './components/Main';
 import Footer from './components/Footer';
 import hornsData from './components/hornsData.json';
 import SelectedBeast from './components/SelectedBeast.js';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 
 
@@ -15,22 +17,20 @@ class App extends React.Component {
 
       dataArr: hornsData,
 
-      stateSelectedBeastDataTitle: "",
-      stateSelectedBeastDataUrl: "",
-      stateSelectedBeastDataDescription: "",
+      stateSelectedTitle: "",
+      stateSelectedUrl: "",
+      stateSelectedDescription: "",
 
       show: false,
-
     }
   }
 
-
-  SelectedBeastData = (stateSelectedBeastDataTitleData, stateSelectedBeastDataUrlData, stateSelectedBeastDataDescriptionData) => {
+  SelectedBeastData = (title, url, description) => {
 
     this.setState({
-      stateSelectedBeastDataTitle: stateSelectedBeastDataTitleData,
-      stateSelectedBeastDataUrl: stateSelectedBeastDataUrlData,
-      stateSelectedBeastDataDescription: stateSelectedBeastDataDescriptionData,
+      stateSelectedTitle: title,
+      stateSelectedUrl: url,
+      stateSelectedDescription: description,
     })
   }
 
@@ -43,32 +43,50 @@ class App extends React.Component {
 
   handleClose = () => {
     this.setState({
-      show:false,
+      show: false,
     })
   }
 
 
-  myFilter = (filteredItems) => {
-    this.setState({
-      dataArr: filteredItems , 
-      
-    })
-  }
+  // myFilter = (filteredItems) => {
+  //   this.setState({
+  //     dataArr: filteredItems,
+  //   })
+  // }
 
-  myFilterRest = (hornsData) => {
-    this.setState({
-      dataArr: hornsData,
-    })
-  }
+  // myFilterRest = (hornsData) => {
+  //   this.setState({
+  //     dataArr: hornsData,
+  //   })
+  // }
 
 
   render() {
     return (
       <div>
         <Header />
-        <Main  beastArr={this.state.dataArr}  myFilter= {this.myFilter} myFilterRest={this.myFilterRest} appFunctionApptoMain={this.SelectedBeastData} handleShowAppToMain={this.handleShow} />
-        <SelectedBeast SelectedBeastTitle={this.state.stateSelectedBeastDataTitle} SelectedBeastUrl={this.state.stateSelectedBeastDataUrl} SelectedBeastDescription={this.state.stateSelectedBeastDataDescriptionData} showvalue={this.state.show} hideValue={this.handleClose}/>
+
+        <Main
+
+          beastArr={this.state.dataArr}
+          myFilter={this.myFilter}
+          myFilterRest={this.myFilterRest}
+          appFunctionApptoMain={this.SelectedBeastData}
+          handleShowAppToMain={this.handleShow}
+
+        />
+
+        <SelectedBeast
+
+          SelectedBeastTitle={this.state.stateSelectedTitle}
+          SelectedBeastUrl={this.state.stateSelectedUrl}
+          SelectedBeastDescription={this.state.stateSelectedDescription}
+          showvalue={this.state.show}
+          hideValue={this.handleClose}
+        />
+
         <Footer />
+
       </div>
     )
   }
