@@ -4,6 +4,8 @@ import Main from './components/Main';
 import Footer from './components/Footer';
 import hornsData from './components/hornsData.json';
 import SelectedBeast from './components/SelectedBeast.js';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 
 

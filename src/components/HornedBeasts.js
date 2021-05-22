@@ -30,10 +30,16 @@ class HornedBeasts extends React.Component {
 
 
     render() {
-        return (
-            <div id="carddisply" >
 
-                <Card style={{ float: 'left ' } , { width: '18rem' } }  onClick={this.lastFunctionPass} >
+        const cardStyle = {
+            marginLeft: "7%",
+            marginRight: "7%", 
+        };
+
+        return (
+
+            <>    
+                <Card style={{cardStyle}, { width: '18rem' } }  onClick={this.lastFunctionPass} >
                     <Card.Img
                         variant="top"
                         src={this.props.image_url}
@@ -54,8 +60,7 @@ class HornedBeasts extends React.Component {
                        </Button>
                     </Card.Body>
                 </Card>
-
-            </div>
+            </>
         );
     }
 }

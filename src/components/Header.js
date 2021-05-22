@@ -10,7 +10,6 @@ class Header extends React.Component {
             padding: "70px",
             fontFamily: "Arial",
             height:"200px",
-            fontSize: "35px",
         };
 
         return (

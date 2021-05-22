@@ -76,13 +76,17 @@ class Main extends React.Component {
             marginLeft: "16%",
             marginRight: "16%",
             marginTop: "15px",
-            boxSizing: "border-box",
-            border: "gray",
-
         };
+
+        const cardStyle = {
+            marginLeft: "7%",
+            marginRight: "7%",
+        };
+
 
         return (
             <div style={bodyStyle} >
+
                 <Form >
                     <Form.Group controlId="exampleForm.SelectCustomSizeSm">
                         <Form.Label>choose horns number</Form.Label>
@@ -95,29 +99,32 @@ class Main extends React.Component {
                         </Form.Control>
                     </Form.Group>
                 </Form>
+                <hr />
 
-                { this.state.filteredBeasts.map((item, index) => {
-                    const cardStyle = {
-                        float: "left",
-                    };
-                    return (
-                        <CardColumns >
-                            <div>
-                                <HornedBeasts
-                                    style={cardStyle}
-                                    title={item.title}
-                                    image_url={item.image_url}
-                                    alt={item.alt}
-                                    description={item.description}
-                                    appFunctionMainToHorned={() => this.SelectedBeastDataAppProps(item.title, item.image_url, item.description)}
-                                    handleShowpropsToHorned={this.handleShowprops}
-                                    key={index}
-                                />
-                            </div>
-                        </CardColumns>
-                    )
-                })
-                }
+                <div style={cardStyle} >
+                    <CardColumns  >
+                        {this.state.filteredBeasts.map((item, index) => {
+
+                            return (
+                                <>
+
+                                    <HornedBeasts
+                                        title={item.title}
+                                        image_url={item.image_url}
+                                        alt={item.alt}
+                                        description={item.description}
+                                        appFunctionMainToHorned={() => this.SelectedBeastDataAppProps(item.title, item.image_url, item.description)}
+                                        handleShowpropsToHorned={this.handleShowprops}
+                                        key={index}
+                                    />
+                                </>
+
+                            )
+                        })
+                        }
+                    </CardColumns>
+                </div>
+
             </div>
         )
     }
